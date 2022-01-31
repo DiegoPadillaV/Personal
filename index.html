@@ -1,0 +1,152 @@
+<!DOCTYPE html>  <!-- Especificacion del tipo de documento -->  
+<html> <!-- Inicio pagina HTML -->
+    <head> <!-- Seccion de recursos y configuraciones, estos recursos pueden ser: Favicon, Script, Estilos CSS, Meta data, Titulo de la pagina, entre otros. -->
+        <meta> <!-- Permite especificar informacion acerca del documento HTML, opciones: charset: Define el juego de caracteres que utiliza la pagina, description: Permite añadir una descripcion de la pagina, keywords: Permite definir palabras claves que se registraran en los motores de busquedas, author: Permite especificar el autor o creador de la pagina y viewport: Señala al navegador el como controlar las dimensiones y escala de la pagina -->
+        <meta charset="UTF-8"> <!-- Permite el uso de palabras con tilde -->
+        <meta name="description" content="Programa FullStack">
+        <meta name="keywords" content="Página HTML, Tag, input, meta">
+        <meta name="author" content="Diego Padilla">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Mi Página</title>
+        <link rel="shortcut icon" href="icon.png"> <!-- Este tag permite agregar diferentes recursos a la pagina, como por ejemplo, el favicon o icono de pagina favorita, permite asociar una imagen a la pagina como tambien, al acceso directo. Otros recursos que se pueden asociar son: CSS, Librerias JavaScipt, entre otros -->
+
+    </head>
+
+    <body> <!-- Seccion de contenido a mostrar en la pagina web, estos elementos pueden ser: Imagenes, Textos, Hipervinculos, Tablas, Listas, Entre otros -->
+        <!-- Estructura del body: header, nav, section, aside, footer.
+        Tag header: Define el encabezado o introduccion de la seccion en la que fue declarada. Puede estar dentro de la seccion body como dentro de la seccion section.
+        Tag nav: Especifica las opciones o menu que tendra disponible la pagina para navegar dentro del sitio. Por lo general contiene los tag ul y li.
+        Tag section: Define una seccion con temas en comun, por ejemplo: caracteristicas de los diferentes tipos de lenguajes de programacion.
+        Tag aside: Permite definir un contenido con una menor importancia dentro de la pagina. Por lo general su posicion sera en el lado izquierdo.
+        Tag footer: Define la seccion que va al final de cada pagina. Es comun que contenga informacion de contacto como por ejemplo: el numero de telefono, correo, direcciones, entre otros. -->
+        <h1>Uso del tag meta</h1> <!-- Permite especificar un encabezado o titulo en una pagina web. Existen 6 tipos en total y se diferencian por el tamaño de la letra. -->
+        <h1>Titulo</h1>
+        <h6>Titulo</h6>
+        <a href="http://www.google.cl">Ir a Google</a> <!-- Esta etiqueta permite agregar hipervinculos o link a nuestro sitio. 
+        El atributo target=_blank, señala al navegador, que debe abrir una nueva pestaña para abrir la pagina señalada en el link. -->
+        <br> <!-- Salto de linea -->
+        <a href="http://www.facebook.com" target="_blank">Ir a FB</a><br>
+        <img> <!-- Permite mostrar una imagen -->
+        <!-- Ej: -->
+        <label>Funciones de cada tecnologia</label><br>
+        <a href="https://www.reddit.com/r/ProgrammerHumor/comments/bjktn0/dev_human/" target="_blank">
+            <img src="DevHuman.png" alt="Error en la carga" width="25%" height="25%">
+        </a><br>
+        <ul><li></li></ul> <!-- Permiten crear listar no ordenadas. Tiene la opcion de establecer el signo modificando la propiedad type, las opciones son: disk, square y circle. Ej: -->
+        <label>Páginas que más usan los alumnos: </label>
+        <ul type=circle>
+            <li>Google</li>
+            <li>Instagram</li>
+            <li>Facebook</li>
+            <li>HD</li>
+        </ul><br>
+        <ol><li></li></ol> <!-- Permite crear listas ordenadas. Ej: -->
+        <label>Mejores Animé: </label>
+        <ol type=1> <!-- tipos disponibles a, 1, i, I -->
+            <li>SNK</li>
+            <li>1 Pushman</li>
+            <li>Death Note</li>
+            <li>Hunter x Hunter</li>
+            <li>Ninja Scroll</li>
+        </ol><br>
+        <table></table> <!-- Permite crear una tabla para mostrar la informacion de forma ordenada, en filas y columnas.
+        Las filas son creadas mediante el tag <tr>.
+        Las columnas mediante el tag <td>.
+        Los titulos de cada columna se pueden crear con el tag <th>. Ej: -->
+        <table>
+            <tr>
+                <th>Encabezado 1</th>
+                <th>Encabezado 2</th>
+                <th>Encabezado 3</th>
+            </tr>
+            <tr>
+                <th>dato A 1</th>
+                <th>dato A 2</th>
+                <th>dato A 3</th>
+            </tr>
+            <tr>
+                <th>dato B 1</th>
+                <th>dato B 2</th>
+                <th>dato B 3</th>
+            </tr>
+        </table><br>
+        <!-- El tag <form>, permite crear un formulario que contiene distintos input's, los cuales, conforman la informacion requerida por el servidor para ser procesada.
+        Los atributos asociados al form son:
+        action: pagina que procesara la informacion, por lo general, tambien devolvera una respuesta.
+        method: especifica la forma como se envia la informacion. Las opciones mas usadas son:
+        GET: la informacion es enviada por medio de la url, lo que permite verlos directamente. Esta opcion, en lo posible, se debe evitar.
+        POST: la informacion es enviada de forma oculta al servidor, por ende, no se ven.
+        name: asigna un nombre al formulario.
+        enctype: especifica como seran codificados los datos que se envian al servidor si el metodo usado es POST. 
+        input: Permite la captura de informacion mediante una caja de texto, como tambien, el envio de informacion.
+        Este tag no requiere cierre.
+        Existen diferentes tipos de input y propiedades utiles para ayudar a la captura de informacion.
+        El input, al ser usado como boton, se debe agregar el tag <form>. 
+        El tag <form>, debe contener todos los input que conforman la pagina, lo que permitira, enviar toda la informacion al servidor cuando el usuario presiona el input de tipo submit(boton). 
+        <input> tipo text:
+        type = Especificar el comportamiento (y forma) del <input>. Existen una variedad de opciones que se veran mas adelante.
+        name = Asigna un nombre que permitira identificar al tag input. Este nombre sera usado por el servidor para capturar el valor que el usuario a especificado. Por convencion, el nombre siempre empieza con txt.
+        La sintaxis de tag <input> es: -->
+        <label>Su nombre es: </label>
+        <input type="text" name="txtNombre" value="Diego" placeholder="Ej: Diego Padilla" title="Agregue su nombre completo"><br> <!-- value = atributo opcional que permite especificar un valor por defecto.
+        Los atributos placeholder y title, permiten entregar una guia o ayuda al usuario. -->
+        <!-- El atributo readonly permite restringir la escritura en el input.
+        El atributo disabled permite bloquear el input y evita el envio al servidor.
+        El atributo required permite obligar al usuario a especificar un valor (validar). Ej: -->
+        <label>Su nombre es: </label>
+        <input type="text" readonly=readonly value="Diego Padilla">
+        <input type="text" disabled>
+        <input type="text" required><br>
+        <!-- Input tipo password, oculta o encripta lo que el usuario escribe. Ej: -->
+        <h2>Ingrese clave</h2>
+        <input type="password" name="txtClave" maxlength="10" title="Señale su clave"><br>
+        <!-- Otros input disponibles para la captura de datos: -->
+        <!-- campo oculto. No se dibuja en la pagina -->
+        <input type="hidden" name="txtId">
+        <!-- agrega un boton de busqueda -->
+        <br><input type="search" name="txtBuscar">
+        <!-- Crea un calendario para seleccionar una fecha -->
+        <br><input type="date" name="txtFecha"> 
+        <!-- Crea un seleccionador de hora -->
+        <br><input type="time" name="txtHora">
+        <!-- Crea un input que solo permite numeros -->
+        <br><input type="number" name="txtNumero">
+        <!-- Crea una paleta de colores -->
+        <br><input type="color" name="txtColor">
+        <!-- Crea un ajustador de valores -->
+        <br><input type="range" name="txtRango">
+        <!-- Otros input para validar email, url y telefono por ahora sin soporte -->
+        <br><input type="email" name="txtEmail">
+        <br><input type="url" name="txtUrl">
+        <br><input type="tel" name="txtTel"><br>
+        <!-- Otra forma de mostrar opciones al usuario, es con el tag select.
+        El tag select despliega una serie de opciones para que el usuario seleccione sola una.
+        El atributo selected, permite "dejar" seleccionada una opcion por defecto. Ej: -->
+        <h2>Listado</h2>
+        <select name="combo">
+            <option value="1">Hola</option>
+            <option value="2">Buenos Días</option>
+            <option value="3" selected>Buenas Tardes</option>
+            <option value="4">Buenas Noches</option>
+        </select><br>
+        <!-- Input tipo radio, permite dar una serie de opciones al usuario y para que este, pueda seleccionar solo uno. Este efecto se logra si todos los radio tienen el mismo nombre en el atributo name.
+        El atributo checked, permite "dejar" marcado un radio por defecto. Ej: -->
+        <label>Cantidad de opcion: </label><br>
+        <input type="radio" name="opcion" value="1"> Opción Uno<br>
+        <input type="radio" name="opcion" value="2" checked> Opción Dos<br>
+        <input type="radio" name="opcion" value="3"> Opción Tres
+        <!-- Input tipo checkbox, permite dar una serie de opciones al usuario y contrario al anterior, puede seleccionar mas de uno. -->
+        <br><h2>Lista de opciones</h2>
+        <input type="checkbox" name="opcion" value="1">Opcion 1 <input type="checkbox" name="opcion" value="2">Opcion 2 <input type="checkbox" name="opcion" checked value="3">Opcion 3<br>
+        <!-- Input tipo submit, permite el envio de la informacion al servidor. Para esta accion, se debe especificar junto a un formulario, usando el tag <form></form>. Ejemplo de envio de informacion al servidor: -->
+        <h2>Textarea</h2>
+        <form action="MiPrimeraPagina.html" method="get">
+            <input type="number" name="txtNumero" placeholder="Ingrese un número" required>
+            <input type="submit" name="btnAceptar" value="Aceptar">
+        </form><br>
+        <!-- La etiqueta <DIV>, se utiliza para dividir o seccionar elementos dentro de una pagina web.
+        Este elemento no se ve en el navegador.
+        Es posible aplicar distintas propiedades mediante CSS, como por ejemplo: color, posicion, entre otros. -->
+        <div></div>
+    </body>
+</html>
